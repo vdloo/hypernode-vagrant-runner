@@ -120,7 +120,7 @@ if [ -d "$HYPERNODE_VAGRANT_RUNNER_DIR" ]; then
     cd -
 else
     echo "Creating a new checkout of hypernode-vagrant-runner in $HYPERNODE_VAGRANT_RUNNER_DIR"
-    git clone /home/vdloo/code/projects/hypernode-vagrant-runner $HYPERNODE_VAGRANT_RUNNER_DIR
+    git clone $HYPERNODE_VAGRANT_RUNNER_REPO $HYPERNODE_VAGRANT_RUNNER_DIR
 fi;
 
 chmod +x $HYPERNODE_VAGRANT_RUNNER_DIR/bin/start_runner.py
